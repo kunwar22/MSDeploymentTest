@@ -28,6 +28,6 @@ jobs:
           cd /home/${{ secrets.EC2_USER }}/app
           mvn clean package
           sudo systemctl stop my-microservice
-          sudo cp target/your-microservice.jar /opt/my-microservice/your-microservice.jar
+          sudo cp target/MSDeploymentDemo-01.jar /opt/javaapps/MSDeploymentDemo-01.jar
           sudo systemctl start my-microservice
           EOF
